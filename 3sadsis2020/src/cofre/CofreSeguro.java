@@ -22,12 +22,10 @@ public class CofreSeguro {
 		return aberto;
 	}
 
-	public int getSenhacofre() {
-		return senhacofre;
-	}
-
-	public void setSenhacofre(int senhacofre) {
+	public CofreSeguro(int senhacofre) {
+		super();
 		this.senhacofre = senhacofre;
 	}
 
+	
 }
