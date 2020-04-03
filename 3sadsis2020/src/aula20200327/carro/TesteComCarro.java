@@ -110,6 +110,24 @@ class TesteComCarro {
 		
 	}
 	
+	@Test
+	void testarEsvaziamentoTanque() {
+		Carro opala =  new Carro(10);
+		
+		opala.ligar();
+		opala.acelerar();
+		opala.desligar();
+		opala.esvaziarTanque();
+		
+		assertEquals(0,opala.getCombustivelNoTanqueEmLitros());
+		
+		opala.abastecer(5);
+		opala.esvaziarTanque();
+		assertEquals(0,opala.getCombustivelNoTanqueEmLitros());
+		
+	}
+	
+	
 	
 }
 

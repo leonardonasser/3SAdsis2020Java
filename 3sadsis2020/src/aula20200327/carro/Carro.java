@@ -18,6 +18,9 @@ public class Carro {
 	}
 
 	public void ligar() {
+		if (this.ligado == true) {
+			throw new RuntimeException("Já está ligado, você não pode ligar mais de uma vez o carro");
+		}
 		if (combustivelNoTanqueEmLitros >= 0.250) {
 			this.combustivelNoTanqueEmLitros -= 0.250;
 			this.ligado = true;
@@ -53,7 +56,9 @@ public class Carro {
 	public Carro(double combustivelNoTanqueEmLitros) {
 		this.combustivelNoTanqueEmLitros = combustivelNoTanqueEmLitros;
 	}
-
 	
+	public void esvaziarTanque() {
+		combustivelNoTanqueEmLitros = 0;
+	}
 
 }
