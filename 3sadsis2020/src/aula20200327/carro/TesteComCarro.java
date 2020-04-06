@@ -118,7 +118,6 @@ class TesteComCarro {
 		opala.acelerar();
 		opala.desligar();
 		opala.esvaziarTanque();
-		
 		assertEquals(0,opala.getCombustivelNoTanqueEmLitros());
 		
 		opala.abastecer(5);
