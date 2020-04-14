@@ -13,13 +13,13 @@ class TestePessoa {
 
 	@Test
 	void testarSettersEGetters() {
-		Pessoa p1 = new Pessoa("Leonardo",18,62,1.80);
-		p1.setNome("Leonardo");
+		Pessoa p1 = new Pessoa(null,18,62,1.80);
+		p1.setNome(null);
 		p1.setIdade(18);
 		p1.setAltura(1.80);
 		p1.setPeso(62);
 
-		assertEquals("Leonardo", p1.getNome());
+		assertEquals(null, p1.getNome());
 		assertEquals(18, p1.getIdade());
 		assertEquals(1.80, p1.getAltura());
 		assertEquals(62, p1.getPeso());
